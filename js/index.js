@@ -1,3 +1,4 @@
+//Это главный фалй нашего проекта, тут я запускаю и тестовый клас Book, и сам GUE / Это же файл подключается в html
 import {Book, filterBooksByGenre, findBookByTitle, sortBooksByRating} from "./modules/book.js";
 import StoryBook from "./modules/storyBook.js";
 
@@ -11,6 +12,7 @@ const App = {
       new StoryBook().init();
     },
 
+    //Сделано по правилам первого задания. Импортируем класс и функции, создаем массив, выполняем результат в консоли
     testBook() {
         const books = [
             new Book('Things Fall Apart', 'Chinua Achebe', '1958', 'horror', '8'),
