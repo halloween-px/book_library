@@ -1,10 +1,10 @@
 /*Наш проект (переменные и базовые стили)*/
 @import "project/varibles.css";
-@import "project/_base.css";
-@import "project/_btn.css";
+@import "project/base.css";
+@import "project/btn.css";
 
 /*Наши секции*/
-@import "components/_storybook.css";
+@import "components/storybook.css";
 
 /*
 P.S
