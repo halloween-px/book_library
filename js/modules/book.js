@@ -29,6 +29,7 @@ class Book {
     }
 }
 
+
 function sortBooksByRating(books) {
     return books.sort((a, b) => a.rating_ - b.rating_)
 }
@@ -37,11 +38,13 @@ function filterBooksByGenre(books, genre) {
     return books.filter(book => book.genre === genre)
 }
 
+//По заданию эта функция должна возвращать именно null, поэтому добовляется вторая строчка в функции
 function findBookByTitle(books, title) {
     const book = books.find(book => book.title === title)
     return book !== undefined ? book : null
 }
 
+//Экспортирую наш класс и функции. В index.js будем подключать все это дело. (Я считаю что это хороший подход, написать то что нам нужно, а использовать там где нам это надо)
 export {
     Book,
     sortBooksByRating,

@@ -1,6 +1,6 @@
-//Это главный фалй нашего проекта, тут я запускаю и тестовый клас Book, и сам GUE / Это же файл подключается в html
-import {Book, filterBooksByGenre, findBookByTitle, sortBooksByRating} from "./modules/book.js";
-import StoryBook from "./modules/storyBook.js";
+//Это главный файл нашего проекта, тут я запускаю и тестовый клас Book, и сам GUE / Этот же файл подключается в html
+import {Book, filterBooksByGenre, findBookByTitle, sortBooksByRating} from "./modules/book.js"; // Импортируем сам класс и функции
+import StoryBook from "./modules/storyBook.js"; // Мой сторибук (Тут вся логика по второму заданию)
 
 const App = {
     init() {
@@ -26,4 +26,5 @@ const App = {
     },
 }
 
+//Запуск! :)
 App.init();
