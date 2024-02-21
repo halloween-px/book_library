@@ -1,0 +1,11 @@
+:root {
+    /*colors*/
+    --main: #DBE7F1;
+    --additional: #f0eae1;
+    --main-bg: #F9FAFB;
+    --white: #fff;
+    --text: #222;
+    --gray: #3d3c3f;
+
+    --transition: all .2s ease-in-out;
+}

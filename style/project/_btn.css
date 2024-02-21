@@ -1,0 +1,32 @@
+.btn {
+    padding: 10px 32px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 110%;
+    transition: var(--transition);
+    border-radius: 50rem;
+}
+
+.btn.btn-sm {
+    padding: 8px;
+    font-size: 15px;
+}
+
+.btn.btn-main {
+    background: var(--text);
+    color: var(--white);
+}
+
+.btn.btn-main:hover {
+    background: var(--gray);
+}
+
+.btn.btn-additional {
+    background: var(--additional);
+    color: var(--text);
+}
+
+.btn.btn-additional:hover {
+    background: var(--text);
+    color: var(--white);
+}

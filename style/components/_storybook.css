@@ -1,0 +1,162 @@
+.storybook {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.storybook h1 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.storybook-wrapper {
+    margin-top: 24px;
+    padding: 24px;
+    background: var(--white);
+    border-radius: 20px;
+}
+
+.storybook-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr repeat(2, 80px) 150px;
+    align-items: end;
+    gap: 12px;
+}
+
+.storybook-element {
+    display: flex;
+    flex-direction: column;
+}
+
+.storybook-element input {
+    width: 100%;
+    border: 1px solid var(--main);
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.storybook-element label {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.storybook-body {
+    margin-top: 24px;
+    padding-top: 24px;
+}
+
+.storybook-body--header {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.storybook-body--header .filter{
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+}
+
+.storybook-body--header .filter:after{
+    position: absolute;
+    left: -75%;
+    bottom: 100%;
+    color: var(--text);
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 50rem;
+    border: 1px solid var(--main);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    background-color: white;
+    width: 185px;
+    font-size: 14px;
+}
+
+.storybook-body--header .filter-rating:after {
+    content: 'Сортировать по рейтингу';
+}
+
+.storybook-body--header .filter-year:after {
+    content: 'Сортировать по году';
+}
+
+.storybook-body--header .filter:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.storybook-body--list .list-item, .storybook-body--header{
+    display: grid;
+    grid-template-columns: 1fr 1fr repeat(5, 130px);
+    align-items: start;
+    gap: 12px;
+    padding: 12px 12px;
+    border-bottom: 1px solid var(--main);
+}
+
+.storybook-body--list .list-item span{
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid transparent;
+    border-radius: 50rem;
+}
+
+.storybook-body--list .list-item span.active{
+    padding: 0 12px;
+    font-weight: 600;
+    font-size: 18px;
+    border-color: var(--main);
+}
+
+.storybook-footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.storybook-footer .import-area {
+    display: flex;
+    gap: 12px;
+}
+
+.storybook-footer label  {
+    min-width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text);
+    color: var(--white);
+    border-radius: 50rem;
+    cursor: pointer;
+    position: relative;
+    padding: 0 12px;
+    transition: var(--transition);
+}
+
+.storybook-footer label span {
+    transition: var(--transition);
+    border-left: 2px solid transparent;
+}
+
+.storybook-footer label span:not(:empty) {
+    padding-left: 12px;
+    margin-left: 12px;
+    border-color: var(--white);
+}
+
+.storybook-footer input  {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

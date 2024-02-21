@@ -1,0 +1,12 @@
+/*Наш проект (переменные и базовые стили)*/
+@import "project/varibles.css";
+@import "project/_base.css";
+@import "project/_btn.css";
+
+/*Наши секции*/
+@import "components/_storybook.css";
+
+/*
+P.S
+    Лучше делить все содердимое стилей, инчае если большой проект можно потом будет заблудиться.
+*/

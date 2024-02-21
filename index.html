@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Test-opt-bank</title>
+</head>
+<body>
+    <section class="storybook">
+        <div class="container">
+            <h1>Список любимых книг</h1>
+            <div class="storybook-wrapper">
+                <div class="storybook-header">
+                    <div class="storybook-element">
+                        <label for="book-name">Название книги</label>
+                        <input type="text" id="book-name" name="title" placeholder="Впишите название книги">
+                    </div>
+                    <div class="storybook-element">
+                        <label for="book-author">Автор книги</label>
+                        <input type="text" id="book-author" name="author" placeholder="Впишите автора книги">
+                    </div>
+                    <div class="storybook-element">
+                        <label for="book-genre">Жанр</label>
+                        <input type="text" name="genre" id="book-genre">
+                    </div>
+                    <div class="storybook-element">
+                        <label for="book-year">Год</label>
+                        <input type="text" name="year" id="book-year">
+                    </div>
+                    <div class="storybook-element">
+                        <label for="book-rating">Рейтинг</label>
+                        <input type="text" name="rating" id="book-rating">
+                    </div>
+                    <button type="button" class="btn btn-main" data-add-book>Добавить</button>
+                </div>
+                <div class="storybook-body">
+                    <div class="storybook-body--header">
+                        <div>Название книги</div>
+                        <div>Автор</div>
+                        <div>Жанр</div>
+                        <div>Год</div>
+                        <div>Ретинг</div>
+                        <div class="filter filter-rating" data-sort-rating>⇅</div>
+                        <div class="filter filter-year" data-sort-year>⇅</div>
+                    </div>
+                    <ul class="storybook-body--list" data-book-list></ul>
+                </div>
+                <div class="storybook-footer">
+                    <a href="#" class="btn btn-main" data-btn-export>Экспортировать книги</a>
+                    <div class="import-area">
+                        <label for="importInput" id="importLabel">
+                            <input type="file" id="importInput" accept=".json">
+                            ↓
+                            <span></span>
+                        </label>
+                        <button class="btn btn-main" data-btn-import>Импортировать книги</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js" type="module"></script>
+    <script src="js/modules/book.js" type="module"></script>
+</body>
+</html>
